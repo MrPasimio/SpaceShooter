@@ -10,9 +10,21 @@ public class SpawnControl : MonoBehaviour
     public int counter = 0;
     public int spawnMax;
 
+    public bool isHorizontalSpawner;
+
     public void Spawn(int numberToSpawn)
     {
         counter = 0;
+        
+        //Randomize the enemy wave;
+        if(isHorizontalSpawner)
+        {
+            ship.GetComponent<SpriteRenderer>().sprite = Hangar.horizontalEnemies[Random.Range(0, Hangar.horizontalEnemies.Length)];
+        }else
+        {
+            ship.GetComponent<SpriteRenderer>().sprite = Hangar.verticalEnemies[Random.Range(0, Hangar.verticalEnemies.Length)];
+        }
+
         spawnMax = numberToSpawn;
         StartCoroutine(SpawnDelay());
     }

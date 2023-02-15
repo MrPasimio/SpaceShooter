@@ -17,10 +17,15 @@ public class ShipControl : MonoBehaviour
     public Transform leftBorder;
     public Transform rightBorder;
 
+    public GameObject explosion;
+    public GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>(); 
+        boxCollider = GetComponent<BoxCollider2D>();
+        GetComponent<SpriteRenderer>().sprite = Hangar.mainHangar[Hangar.shipIndex];
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -68,5 +73,18 @@ public class ShipControl : MonoBehaviour
     {
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collision");
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            Debug.Log("Enemy Collision");
+            Instantiate(explosion, transform.position, transform.rotation);
+            gm.GameOver();
+            Destroy(gameObject);
+            
+        }
     }
 }

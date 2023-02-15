@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2509507901839520594}
   m_RootOrder: 0
@@ -42,6 +43,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -97,8 +99,8 @@ GameObject:
   - component: {fileID: 1972899894965419095}
   - component: {fileID: 1972899894965419088}
   m_Layer: 0
-  m_Name: EnemyShip-1.png
-  m_TagString: Untagged
+  m_Name: VerticalEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,6 +115,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.011476, y: 3.1764865, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2509507901839520594}
   - {fileID: 2193672750328702105}
@@ -130,6 +133,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -206,7 +210,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1972899894965419098}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -230,6 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 943518404328048883, guid: 5afbac51404e31e4c95aa02ef6c70563, type: 3}
+  value: 0
+  gm: {fileID: 0}
 --- !u!114 &1972899894965419088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +276,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8124001942699109239}
   m_Father: {fileID: 1972899894965419092}
@@ -305,7 +312,7 @@ GameObject:
   - component: {fileID: 3684830661398039744}
   m_Layer: 0
   m_Name: EnemyShip-1.png
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,6 +327,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1972899894965419092}
   m_RootOrder: 1
@@ -335,6 +343,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -411,7 +420,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 7334268118278226595}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -434,7 +443,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb5238d6b1f2a4e4d9a323426ed1c940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 943518404328048883, guid: 5afbac51404e31e4c95aa02ef6c70563, type: 3}
+  explosion: {fileID: 7026493922773362397, guid: a613533c93cb3cd469b5d7a3245aac73, type: 3}
+  value: 100
+  gm: {fileID: 0}
 --- !u!114 &4213633030901961422
 MonoBehaviour:
   m_ObjectHideFlags: 0
