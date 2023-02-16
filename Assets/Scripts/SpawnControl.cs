@@ -12,6 +12,8 @@ public class SpawnControl : MonoBehaviour
 
     public bool isHorizontalSpawner;
 
+    public Sprite currentSprite;
+
     public void Spawn(int numberToSpawn)
     {
         counter = 0;
@@ -19,10 +21,16 @@ public class SpawnControl : MonoBehaviour
         //Randomize the enemy wave;
         if(isHorizontalSpawner)
         {
-            ship.GetComponent<SpriteRenderer>().sprite = Hangar.horizontalEnemies[Random.Range(0, Hangar.horizontalEnemies.Length)];
+            int randomInt = Random.Range(0, Hangar.horizontalEnemies.Length);
+            Debug.Log("Horizontal Index: " + randomInt);
+            currentSprite = Hangar.horizontalEnemies[randomInt];
+            Debug.Log("Updated sprite: " + currentSprite.name);
         }else
         {
-            ship.GetComponent<SpriteRenderer>().sprite = Hangar.verticalEnemies[Random.Range(0, Hangar.verticalEnemies.Length)];
+            int randomInt = Random.Range(0, Hangar.verticalEnemies.Length);
+            Debug.Log("Vertical Index: " + randomInt);
+            currentSprite = Hangar.verticalEnemies[randomInt];
+            Debug.Log("Updated sprite: " + currentSprite.name);
         }
 
         spawnMax = numberToSpawn;
@@ -31,7 +39,16 @@ public class SpawnControl : MonoBehaviour
 
     IEnumerator SpawnDelay()
     {
-        Instantiate(ship, transform.position, transform.rotation);
+        GameObject currentShip = Instantiate(ship, transform.position, transform.rotation);
+
+        if(!isHorizontalSpawner)
+        {
+            currentShip = currentShip.transform.FindChild("VShip").gameObject;
+        }
+
+        Debug.Log("Current Sprite: " + currentSprite.name);
+        currentShip.GetComponent<SpriteRenderer>().sprite = currentSprite;
+
         yield return new WaitForSeconds(delay);
         counter++;
         if(counter < spawnMax)

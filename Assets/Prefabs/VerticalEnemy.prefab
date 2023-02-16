@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 4213633030901961422}
   - component: {fileID: 3684830661398039744}
   m_Layer: 0
-  m_Name: EnemyShip-1.png
+  m_Name: VShip
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
