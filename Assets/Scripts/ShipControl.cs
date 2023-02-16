@@ -19,12 +19,16 @@ public class ShipControl : MonoBehaviour
     public GameObject explosion;
     public GameManager gm;
 
+    // Cache the Main camera as accessing Camera.main in Update() is expensive.
+    private Camera _mainCamera;
+
     // Start is called before the first frame update
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         GetComponent<SpriteRenderer>().sprite = Hangar.mainHangar[Hangar.shipIndex];
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        _mainCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -37,7 +41,7 @@ public class ShipControl : MonoBehaviour
 
         if(Input.GetMouseButton(0))
         {
-            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
             if (mousePos.x >= leftBorder.position.x && mousePos.x <= rightBorder.position.x)
             {
@@ -64,7 +68,6 @@ public class ShipControl : MonoBehaviour
             canShoot = false;
             Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             StartCoroutine(nameof(ShootDelay));
-
         }
     }
 

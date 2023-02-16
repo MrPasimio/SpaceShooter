@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -44,8 +43,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverDisplay.SetActive(true);
-        Invoke("ResetGame", 3);
-
+        Invoke(nameof(ResetGame), 3);
     }
 
     public void ResetGame()

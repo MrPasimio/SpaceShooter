@@ -10,6 +10,5 @@ public class TitleControl : MonoBehaviour
         {
             SceneManager.LoadScene("ShipSelect");
         }
-        
     }
 }

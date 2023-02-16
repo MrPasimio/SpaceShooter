@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-
     public GameObject explosion;
     public int value;
     public GameManager gm;
