@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnControl : MonoBehaviour
@@ -55,7 +54,5 @@ public class SpawnControl : MonoBehaviour
         {
             StartCoroutine(SpawnDelay());
         }
-        
-
     }
 }

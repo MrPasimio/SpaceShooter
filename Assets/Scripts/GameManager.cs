@@ -22,12 +22,6 @@ public class GameManager : MonoBehaviour
         StartCoroutine(nameof(SpawnWave));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator SpawnWave()
     {
         spawners[Random.Range(0, spawners.Length)].Spawn(6);
@@ -58,5 +52,4 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
     }
-
 }

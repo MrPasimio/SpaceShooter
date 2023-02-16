@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -26,12 +24,6 @@ public class Hangar : MonoBehaviour
     {
         sceneIndex = 0;
         UpdateDisplay();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void UpdateDisplay()
