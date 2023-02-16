@@ -17,21 +17,6 @@ public class SpawnControl : MonoBehaviour
     public void Spawn(int numberToSpawn)
     {
         counter = 0;
-        
-        //Randomize the enemy wave;
-        if(isHorizontalSpawner)
-        {
-            int randomInt = Random.Range(0, Hangar.horizontalEnemies.Length);
-            Debug.Log("Horizontal Index: " + randomInt);
-            currentSprite = Hangar.horizontalEnemies[randomInt];
-            Debug.Log("Updated sprite: " + currentSprite.name);
-        }else
-        {
-            int randomInt = Random.Range(0, Hangar.verticalEnemies.Length);
-            Debug.Log("Vertical Index: " + randomInt);
-            currentSprite = Hangar.verticalEnemies[randomInt];
-            Debug.Log("Updated sprite: " + currentSprite.name);
-        }
 
         spawnMax = numberToSpawn;
         StartCoroutine(SpawnDelay());
@@ -39,6 +24,22 @@ public class SpawnControl : MonoBehaviour
 
     IEnumerator SpawnDelay()
     {
+
+        //Randomize the enemy wave;
+        if (isHorizontalSpawner)
+        {
+            int randomInt = Random.Range(0, Hangar.horizontalEnemies.Length);
+            Debug.Log("Horizontal Index: " + randomInt);
+            currentSprite = Hangar.horizontalEnemies[randomInt];
+            Debug.Log("Updated sprite: " + currentSprite.name);
+        }
+        else
+        {
+            int randomInt = Random.Range(0, Hangar.verticalEnemies.Length);
+            Debug.Log("Vertical Index: " + randomInt);
+            currentSprite = Hangar.verticalEnemies[randomInt];
+            Debug.Log("Updated sprite: " + currentSprite.name);
+        }
         GameObject currentShip = Instantiate(ship, transform.position, transform.rotation);
 
         if(!isHorizontalSpawner)

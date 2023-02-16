@@ -480,24 +480,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneHangar:
-  - {fileID: 21300000, guid: 613869d51c47dd54a8c6a1e7de40faeb, type: 3}
-  - {fileID: 21300000, guid: 46f9658384702e144b30b1594b5e74e9, type: 3}
-  - {fileID: 21300000, guid: adaf94496bb17a14d8f335caa625e64d, type: 3}
-  - {fileID: 21300000, guid: 987884f8e16a7b840b5991752c750e73, type: 3}
-  - {fileID: 21300000, guid: 881fdc50bcc53f645b8d752802aa745d, type: 3}
-  - {fileID: 21300000, guid: f3f6fed6888dacf46a610c42d71c6c0e, type: 3}
-  - {fileID: 21300000, guid: 1db3a4c9bed4c1649a22c8f9c4e5deb3, type: 3}
-  - {fileID: 21300000, guid: cebf45ea48303784b92f9c317fb8c966, type: 3}
-  - {fileID: 21300000, guid: a2db8c2ee0abd41489f3e82f405a7627, type: 3}
+  - {fileID: 21300000, guid: 4dde361fe180e784e9125b4ae564a6f3, type: 3}
+  - {fileID: 21300000, guid: 98811b2eb3942664e81fd13f0aba8228, type: 3}
+  - {fileID: 21300000, guid: 951020bb547d4dc49a5d455948eee3bf, type: 3}
+  - {fileID: 21300000, guid: a00be0cda2b807e4eb05979f6b9b9d02, type: 3}
+  - {fileID: 21300000, guid: 2bef6b577a4ab004b833037eb22f52c9, type: 3}
+  - {fileID: 21300000, guid: 2ae0e5010194a30449f8bfd08154c0a2, type: 3}
+  - {fileID: 21300000, guid: cf9dcf4413a1bc2469913edfd8b8a46d, type: 3}
+  - {fileID: 21300000, guid: 3e6bd8a75730e904d94dea8d9cd89484, type: 3}
+  - {fileID: 21300000, guid: 0d1db94a9a7f78e42b522675e06718d0, type: 3}
+  - {fileID: 21300000, guid: 8d3b99475ac6b2b4fb1da7ceab51bd68, type: 3}
+  - {fileID: 21300000, guid: 60d74cf4f91f2604f855e476182444f0, type: 3}
   sceneVerticalEnemies:
-  - {fileID: 21300000, guid: 71bb42061e2aabe4fb04888addee759a, type: 3}
-  - {fileID: 21300000, guid: 2afe153267259d940b1de672854d832a, type: 3}
-  - {fileID: 21300000, guid: 299c30ef9fa06dd41972f659d767428a, type: 3}
-  - {fileID: 21300000, guid: e601b29ca94c3b44c815f3a3339905ec, type: 3}
-  - {fileID: 21300000, guid: 39fe958f830339a4b93cb67fb784383a, type: 3}
+  - {fileID: 21300000, guid: 6cb7850e833a5f042a6554acc237815f, type: 3}
   - {fileID: 21300000, guid: 67aa789ca41e1114681381da34de8e93, type: 3}
+  - {fileID: 21300000, guid: da997bb23954b8b4a8c960a9d74002bf, type: 3}
+  - {fileID: 21300000, guid: 2f25f67a57a185f47b671f329a0de88a, type: 3}
+  - {fileID: 21300000, guid: 65d18940a0a117443abb80e18d2626ff, type: 3}
+  - {fileID: 21300000, guid: 53409c72884570d43a02e77356ecb148, type: 3}
+  - {fileID: 21300000, guid: 2e6018a5787b76544a0419e267811e6e, type: 3}
+  - {fileID: 21300000, guid: 68d21c8710ca5ad46bf7c5498ea4a3d6, type: 3}
+  - {fileID: 21300000, guid: 39fe958f830339a4b93cb67fb784383a, type: 3}
+  - {fileID: 21300000, guid: 735aa3453151a7145a872a964887e1b9, type: 3}
+  - {fileID: 21300000, guid: e601b29ca94c3b44c815f3a3339905ec, type: 3}
+  - {fileID: 21300000, guid: 7da1a283a294cb14f8e730e2525edd65, type: 3}
+  - {fileID: 21300000, guid: 2467aa8c924c0e44797dfcbd5cb24c6b, type: 3}
+  - {fileID: 21300000, guid: 299c30ef9fa06dd41972f659d767428a, type: 3}
+  - {fileID: -1255607619, guid: 14a64e84d83c5b347951e9ba635d8548, type: 3}
   sceneHorizontalEnemies:
-  - {fileID: 21300000, guid: 42ec3c1820cf6fb4e893f99f0af5dcce, type: 3}
+  - {fileID: 21300000, guid: b0e6051b4b5a51a48acdfe7a492dc555, type: 3}
+  - {fileID: 21300000, guid: 9ef1a6330f5fb0b4c813400ea6e20ff6, type: 3}
+  - {fileID: 21300000, guid: 3bab2e8dbebd4a045898ee608902de1e, type: 3}
+  - {fileID: 21300000, guid: 1ab812ec369ade947a6e9dfe5bbab2c3, type: 3}
+  - {fileID: 21300000, guid: 2e8771009ebe0fd478275393e2993512, type: 3}
+  - {fileID: 21300000, guid: e2b2a9af07daabe418bf365b7c8de34f, type: 3}
+  - {fileID: 21300000, guid: 14022e37d4016ac48b39536cfd11c2a2, type: 3}
+  - {fileID: 21300000, guid: 4bacec6019789304ba003ed6a57be963, type: 3}
+  - {fileID: 21300000, guid: 95084778567067f4d9b8a63d9a0dc75f, type: 3}
+  - {fileID: 21300000, guid: 7534571a9c20a6946b177ead1fbb7668, type: 3}
+  - {fileID: 21300000, guid: 37e6b21c5059c8c4fb096c8fcd283312, type: 3}
+  - {fileID: 21300000, guid: 28d56863e2fb97740a67e38393c927e7, type: 3}
+  - {fileID: 21300000, guid: 7f65468f0ecbcab4aa2efd1dede75dff, type: 3}
+  - {fileID: 21300000, guid: dc865fab95dc6da4a91610a2f931586f, type: 3}
   sceneIndex: 0
   shipDisplay: {fileID: 1525395807}
 --- !u!4 &668988595
